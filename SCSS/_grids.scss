@@ -9,53 +9,46 @@
     justify-content: center;
     margin: 50px 0;
     height: auto;
-}
-
-#galery #picture {
-    grid-area: cuadro;
-    background-image: url("../images/papaHuancaina.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-}
-
-#galery #picture2 {
-    grid-area: imagen2;
-    background-image: url("../images/chifa.jfif");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#galery #picture3 {
-    grid-area: imagen3;
-    background-image: url("../images/pollo_brasa.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#galery #desc2 {
-    grid-area: descripcion2;
-    background-color: white;
-    padding: 20px;
-}
-
-#galery #desc3 {
-    grid-area: descripcion3;
-    background-color: white;
-    padding: 20px;
-}
-
-#galery #desc1 {
-    grid-area: descripcion1;
-    background-color: white;
-    padding: 20px;
-}
-
-#galery p {
-    margin-top: 10px;
-    text-align: justify;
-    color: black;
+    #picture {
+        grid-area: cuadro;
+        background-image: url("../images/papaHuancaina.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+    }
+    #picture2 {
+        grid-area: imagen2;
+        background-image: url("../images/chifa.jfif");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #picture3 {
+        grid-area: imagen3;
+        background-image: url("../images/pollo_brasa.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #desc2 {
+        grid-area: descripcion2;
+        background-color: white;
+        padding: 20px;
+    }
+    #desc3 {
+        grid-area: descripcion3;
+        background-color: white;
+        padding: 20px;
+    }
+    #desc1 {
+        grid-area: descripcion1;
+        background-color: white;
+        padding: 20px;
+    }
+    p {
+        margin-top: 10px;
+        text-align: justify;
+        color: black;
+    }
 }
 
 
@@ -72,79 +65,76 @@
     grid-row-gap: 10px;
     justify-content: center;
     margin-bottom: 50px;
-}
-
-#galery2 #cuadro,
-#cuadro2,
-#imagen2,
-#imagen3,
-#imagen4,
-#imagen5,
-#imagen6,
-#imagen7,
-#imagen8,
-#imagen9 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#galery2 #cuadro {
-    grid-area: cuadro;
-    background-image: url("../images/miraflores.jpg");
-    background-position: center;
-}
-
-#galery2 #imagen2 {
-    grid-area: imagen2;
-    background-image: url("../images/rosa_nautica_3.jpg");
-    background-position: center;
-}
-
-#galery2 #imagen3 {
-    grid-area: imagen3;
-    background-image: url("../images/tanta.jpg");
-    background-position: center;
-}
-
-#galery2 #imagen4 {
-    grid-area: imagen4;
-    background-image: url("../images/siete.jpg");
-    background-position: center;
-}
-
-#galery2 #imagen5 {
-    grid-area: imagen5;
-    background-image: url("../images/puku.jpg");
-    background-position: center;
-}
-
-#galery2 #imagen6 {
-    grid-area: imagen6;
-    background-image: url("../images/canta\ rana.jpg");
-    background-position: center;
-}
-
-#galery2 #imagen7 {
-    grid-area: imagen7;
-    background-image: url("../images/queirolo.jpg");
-    background-position: center;
-}
-
-#galery2 #imagen8 {
-    grid-area: imagen8;
-    background-image: url("../images/embarcadero.jpg");
-    background-position: center;
-}
-
-#galery2 #imagen9 {
-    grid-area: imagen9;
-    background-image: url("../images/naruto.jpg");
-}
-
-#galery2 #cuadro2 {
-    grid-area: cuadro2;
-    background-image: url("../images/mercado-28-lima.jpg");
+    #cuadro {
+        grid-area: cuadro;
+        background-image: url("../images/miraflores.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #imagen2 {
+        grid-area: imagen2;
+        background-image: url("../images/rosa_nautica_3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #imagen3 {
+        grid-area: imagen3;
+        background-image: url("../images/tanta.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #imagen4 {
+        grid-area: imagen4;
+        background-image: url("../images/siete.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #imagen5 {
+        grid-area: imagen5;
+        background-image: url("../images/puku.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #imagen6 {
+        grid-area: imagen6;
+        background-image: url("../images/canta\ rana.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #imagen7 {
+        grid-area: imagen7;
+        background-image: url("../images/queirolo.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #imagen8 {
+        grid-area: imagen8;
+        background-image: url("../images/embarcadero.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #imagen9 {
+        grid-area: imagen9;
+        background-image: url("../images/naruto.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #cuadro2 {
+        grid-area: cuadro2;
+        background-image: url("../images/mercado-28-lima.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 
@@ -155,16 +145,13 @@
     grid-template-areas: "header header header" "main main main" "footer footer footer";
     grid-template-rows: 9% 84% 9%;
     grid-template-columns: 33% 34% 33%;
-}
-
-#unete header {
-    grid-area: header;
-}
-
-#unete main {
-    grid-area: main;
-}
-
-#unete footer {
-    grid-area: footer;
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer;
+    }
 }
