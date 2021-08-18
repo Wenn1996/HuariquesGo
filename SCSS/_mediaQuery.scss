@@ -1,94 +1,109 @@
 /*mobile first*/
 
 @media (min-width:320px) and (max-width: 599px) {
-    /*INDEX*/
+    /*HEADER*/
     nav li {
         display: block;
         position: relative;
-    }
-    nav li a {
-        text-align: center;
-        padding: 17px 16px;
-    }
-    /*Sección 1 - Inicio*/
-    .bannerPrincipal {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        .titulo {
-            background-color: white;
-            width: 100%;
-            height: 50vh;
-            padding-top: 0;
-            padding-left: 0;
-            padding-right: 0;
+        a {
             text-align: center;
-            align-items: center;
-        }
-        img {
-            height: 50vh;
-            width: 100%;
+            padding: 17px 16px;
         }
     }
-    .titulo p {
-        padding: 0 50px;
-        text-align: center;
-    }
-    .tituloPrincipal {
-        padding-top: 50px;
-        font-size: 2rem;
-    }
-    #altura {
-        height: max-content;
-        padding: 0;
-        height: 240vh;
-    }
-    #galery {
-        display: grid;
-        grid-template-areas: "cuadro" "descripcion1" "imagen2" "descripcion2" "imagen3" "descripcion3";
-        grid-template-columns: 100%;
-        grid-template-rows: 30% 40% 20% 20% 10% 10%;
-        padding: 40px;
-        grid-column-gap: 0px;
-        grid-row-gap: 10px;
-        justify-content: center;
-        margin: 0;
-        height: 150vh;
-    }
-    #galery #picture2,
-    #picture3 {
-        margin-top: 10px;
-    }
+    /*Titulos*/
     .subtituloPrincipal {
         padding-top: 50px;
         padding-left: 0px;
     }
-    /*Restaurantes*/
-    #bannerSecundario {
-        height: 50vh;
+    .subtituloSecundario {
+        margin-top: 25px;
+        padding-top: 20px;
+        animation: swing;
+        animation-duration: 4s;
     }
-    #titRestaurante {
-        height: 40vh;
-        h1 {
-            padding: 20px;
-            margin: 20px 0;
-            font-size: 2rem;
+    /*Sección 1 - Inicio*/
+    main {
+        .bannerPrincipal {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            .titulo {
+                background-color: white;
+                width: 100%;
+                height: 50vh;
+                padding-top: 0;
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+                align-items: center;
+                .tituloPrincipal {
+                    padding-top: 50px;
+                    font-size: 2rem;
+                }
+                p {
+                    padding: 0 50px;
+                    text-align: center;
+                }
+            }
+            img {
+                height: 50vh;
+                width: 100%;
+            }
+        }
+        #altura {
+            height: max-content;
+            padding: 0;
+            height: 260vh;
+            #galery {
+                display: grid;
+                grid-template-areas: "cuadro" "descripcion1" "imagen2" "descripcion2" "imagen3" "descripcion3";
+                grid-template-columns: 100%;
+                grid-template-rows: 30% 40% 20% 20% 20% 20%;
+                padding: 40px;
+                grid-column-gap: 0px;
+                grid-row-gap: 10px;
+                justify-content: center;
+                margin: 0;
+                height: 150vh;
+                #picture2 {
+                    margin-top: 10px;
+                }
+                #picture3 {
+                    margin-top: 10px;
+                }
+            }
         }
     }
-    #fotos {
-        height: 350vh;
-    }
-    #galery2 {
-        display: grid;
-        grid-template-areas: "cuadro" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6" "imagen7" "imagen8" "imagen9";
-        grid-template-columns: 90%;
-        grid-template-rows: 36% 36% 36% 36% 36% 36% 36% 36% 36%;
-        height: 100hv;
-        padding: 0;
-        grid-column-gap: 0;
-        grid-row-gap: 10px;
-        justify-content: center;
-        margin: 20px 10px;
+    /*Restaurantes*/
+    main {
+        section {
+            #bannerSecundario {
+                height: 50vh;
+            }
+            #titRestaurante {
+                height: 40vh;
+                h1 {
+                    padding: 20px;
+                    margin: 20px 0;
+                    font-size: 2rem;
+                }
+            }
+        }
+        #fotos {
+            height: 350vh;
+            #galery2 {
+                display: grid;
+                grid-template-areas: "cuadro" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6" "imagen7" "imagen8" "imagen9";
+                grid-template-columns: 90%;
+                grid-template-rows: 36% 36% 36% 36% 36% 36% 36% 36% 36%;
+                height: 100hv;
+                padding: 0;
+                grid-column-gap: 0;
+                grid-row-gap: 10px;
+                justify-content: center;
+                margin: 20px 10px;
+            }
+        }
     }
     /*Eventos*/
     .columna {
@@ -134,178 +149,183 @@
         margin: 0;
         height: auto;
         align-content: center;
-    }
-    #quintoBanner {
-        width: 100%;
-        height: 30vh;
-        background-image: url("../images/mercado-28-lima.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .formulario {
-        padding-top: 10%;
-        padding-bottom: 10%;
-        background-color: white;
-        width: 100%;
-        color: black;
-        text-align: center;
-        align-content: center;
-        h1 {
-            padding-top: 0;
+        #quintoBanner {
+            width: 100%;
+            height: 30vh;
+            background-image: url("../images/mercado-28-lima.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
-        p {
-            padding: 0 50px;
+        .formulario {
+            padding-top: 10%;
+            padding-bottom: 10%;
+            background-color: white;
+            width: 100%;
+            color: black;
+            text-align: center;
+            align-content: center;
+            h1 {
+                padding-top: 0;
+            }
+            p {
+                padding: 0 50px;
+            }
         }
     }
     /*nosotros*/
-    #cuartoBanner {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        .card {
-            height: 40vh;
-            width: 100%;
-            background-color: white;
-            transition: none;
-            text-align: center;
+    main {
+        #cuartoBanner {
+            height: auto;
+            display: flex;
+            flex-direction: column;
             padding: 0;
-            h1 {
-                padding-top: 30px;
-                font-size: 2rem;
-            }
-            p {
-                font-size: 0.8rem;
-                margin: 10px 0;
-                height: 15vh;
+            .card {
+                height: 40vh;
                 width: 100%;
+                background-color: white;
+                transition: none;
                 text-align: center;
+                padding: 0;
+                h1 {
+                    padding-top: 30px;
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 0.8rem;
+                    margin: 10px 0;
+                    height: 15vh;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            img {
+                height: 45vh;
+                width: 100%;
             }
         }
-        img {
-            height: 45vh;
-            width: 100%;
+        section {
+            .cardNosotros {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding: 0 50px;
+                .cardNosotros__img {
+                    padding: 0;
+                    margin: 20px 0;
+                    width: 100%;
+                }
+                .cardNosotros__texto {
+                    padding: 0;
+                    .cardNosotros__titulo {
+                        margin-bottom: 5px;
+                    }
+                    .cardNostros__parrafo {
+                        font-size: 0.8rem;
+                    }
+                    .cardNosotros__boton {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
         }
-    }
-    .cardNosotros {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 0 50px;
-    }
-    .cardNosotros__img {
-        padding: 0;
-        margin: 20px 0;
-        width: 100%;
-    }
-    .cardNosotros__texto {
-        padding: 0;
-    }
-    .cardNosotros__titulo {
-        margin-bottom: 5px;
-    }
-    .cardNosotros__boton {
-        margin-bottom: 20px;
-    }
-    .cardNostros__parrafo {
-        font-size: 0.8rem;
-    }
-    .subtituloSecundario {
-        margin-top: 25px;
-        padding-top: 20px;
-        animation: swing;
-        animation-duration: 4s;
     }
     /**/
 }
 
 @media (min-width:600px) and (max-width: 768px) {
-    /*INDEX*/
     nav li {
         display: block;
         position: relative;
-    }
-    nav li a {
-        text-align: center;
-        padding: 17px 16px;
-    }
-    .bannerPrincipal {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        .titulo {
-            background-color: white;
-            width: 100%;
-            height: 100vh;
-            padding-right: 20px;
-            padding-left: 60px;
-            padding-top: 0;
-        }
-        img {
-            height: 90vh;
-            width: 100%;
+        a {
+            text-align: center;
+            padding: 17px 16px;
         }
     }
-    .tituloPrincipal {
-        padding-top: 40vh;
-    }
-    #altura {
-        height: auto;
-    }
-    #galery {
-        display: grid;
-        grid-template-areas: "cuadro cuadro" "descripcion1 descripcion1" "imagen2 imagen3" "descripcion2 descripcion3";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50vh 40vh 40vh 20vh;
-        padding: 30px;
-        grid-column-gap: 10px;
-        grid-row-gap: 5px;
-        justify-content: center;
-        margin: 0px;
-        height: auto;
-    }
-    #galery #picture2 {
-        background-position: center;
-    }
-    #galery #picture3 {
-        background-position: center;
-    }
+    /*Titulos y subtitulos*/
     .subtituloPrincipal {
         padding-top: 50px;
         padding-left: 0px;
     }
-    /*Restaurantes*/
-    #bannerSecundario {
-        height: 50vh;
-    }
-    #titRestaurante {
-        h1 {
-            padding: 30px;
-            margin: 20px 0;
-            font-size: 2rem;
-        }
-    }
-    #fotos {
-        margin: 20px 0;
-        #galery2 {
-            display: grid;
-            grid-template-areas: "cuadro cuadro imagen2 imagen3" "imagen4 imagen5 imagen6 imagen6" "imagen7 imagen7 imagen8 imagen9" "cuadro2 cuadro2 cuadro2 cuadro2";
-            grid-template-columns: 22% 22% 22% 22%;
-            grid-template-rows: 22% 22% 22% 22%;
-            height: 120vh;
-            padding: 0;
-            grid-column-gap: 10px;
-            grid-row-gap: 10px;
-            justify-content: center;
-            margin: 10px 0;
-        }
-    }
-    /*Eventos*/
     .tituloSecundario {
         padding-top: 40vh;
         font-size: 2rem;
     }
+    /*Seccion Inicio*/
+    main {
+        .bannerPrincipal {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            .titulo {
+                background-color: white;
+                width: 100%;
+                height: 100vh;
+                padding-right: 20px;
+                padding-left: 60px;
+                padding-top: 0;
+                .tituloPrincipal {
+                    padding-top: 40vh;
+                }
+            }
+            img {
+                height: 90vh;
+                width: 100%;
+            }
+        }
+        #altura {
+            height: auto;
+            #galery {
+                display: grid;
+                grid-template-areas: "cuadro cuadro" "descripcion1 descripcion1" "imagen2 imagen3" "descripcion2 descripcion3";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50vh 40vh 40vh 20vh;
+                padding: 30px;
+                grid-column-gap: 10px;
+                grid-row-gap: 5px;
+                justify-content: center;
+                margin: 0px;
+                height: auto;
+                #picture2 {
+                    background-position: center;
+                }
+                #picture3 {
+                    background-position: center;
+                }
+            }
+        }
+    }
+    /*Restaurantes*/
+    main {
+        section {
+            #bannerSecundario {
+                height: 50vh;
+            }
+            #titRestaurante {
+                h1 {
+                    padding: 30px;
+                    margin: 20px 0;
+                    font-size: 2rem;
+                }
+            }
+        }
+        #fotos {
+            margin: 20px 0;
+            #galery2 {
+                display: grid;
+                grid-template-areas: "cuadro cuadro imagen2 imagen3" "imagen4 imagen5 imagen6 imagen6" "imagen7 imagen7 imagen8 imagen9" "cuadro2 cuadro2 cuadro2 cuadro2";
+                grid-template-columns: 22% 22% 22% 22%;
+                grid-template-rows: 22% 22% 22% 22%;
+                height: 120vh;
+                padding: 0;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                justify-content: center;
+                margin: 10px 0;
+            }
+        }
+    }
+    /*Eventos*/
     .columna {
         padding: 10px 50px;
         .columna__evento {
@@ -326,51 +346,55 @@
         }
     }
     /*nosotros*/
-    #cuartoBanner {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        .card {
-            height: 40vh;
-            width: 100%;
-            background-color: white;
-            transition: none;
-            text-align: center;
+    main {
+        #cuartoBanner {
+            display: flex;
+            flex-direction: column;
             padding: 0;
-            h1 {
-                padding-top: 70px;
-                font-size: 2rem;
-            }
-            p {
-                font-size: 1rem;
-                margin: 10px 0;
-                height: 15vh;
+            .card {
+                height: 40vh;
                 width: 100%;
+                background-color: white;
+                transition: none;
                 text-align: center;
+                padding: 0;
+                h1 {
+                    padding-top: 70px;
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                    margin: 10px 0;
+                    height: 15vh;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            img {
+                height: 55vh;
+                width: 100%;
             }
         }
-        img {
-            height: 55vh;
-            width: 100%;
-        }
-    }
-    .cardNosotros {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 0 50px;
-        .cardNosotros__img {
-            padding: 0;
-            margin: 20px 0;
-            width: 100%;
-        }
-        .cardNosotros__texto {
-            padding: 0;
-            .cardNosotros__titulo {
-                margin-bottom: 5px;
-            }
-            .cardNosotros__boton {
-                margin-bottom: 30px;
+        section {
+            .cardNosotros {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding: 0 50px;
+                .cardNosotros__img {
+                    padding: 0;
+                    margin: 20px 0;
+                    width: 100%;
+                }
+                .cardNosotros__texto {
+                    padding: 0;
+                    .cardNosotros__titulo {
+                        margin-bottom: 5px;
+                    }
+                    .cardNosotros__boton {
+                        margin-bottom: 30px;
+                    }
+                }
             }
         }
     }
@@ -381,76 +405,78 @@
         flex-wrap: wrap;
         margin: 0;
         height: auto;
-    }
-    #quintoBanner {
-        width: 100%;
-        height: 40vh;
-        background-image: url("../images/mercado-28-lima.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .formulario {
-        padding: 0;
-        background-color: white;
-        width: 100%;
-        color: black;
-        text-align: center;
-        align-content: center;
-        h1 {
-            padding-top: 10px;
+        #quintoBanner {
+            width: 100%;
+            height: 40vh;
+            background-image: url("../images/mercado-28-lima.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
-        .formulario__input {
-            width: 70%;
-            margin: 10px 0;
-        }
-        .boton {
-            margin-bottom: 30px;
+        .formulario {
+            padding: 0;
+            background-color: white;
+            width: 100%;
+            color: black;
+            text-align: center;
+            align-content: center;
+            h1 {
+                padding-top: 10px;
+            }
+            .formulario__input {
+                width: 70%;
+                margin: 10px 0;
+            }
+            .boton {
+                margin-bottom: 30px;
+            }
         }
     }
 }
 
 @media (min-width:769px) and (max-width: 1024px) {
     /*index*/
-    .bannerPrincipal {
-        display: flex;
-        flex-direction: row;
-        .titulo {
-            background-color: white;
-            width: 40%;
-            height: 95vh;
-            padding-right: 20px;
-            padding-left: 60px;
-            padding-top: 0;
+    main {
+        .bannerPrincipal {
+            display: flex;
+            flex-direction: row;
+            .titulo {
+                background-color: white;
+                width: 40%;
+                height: 95vh;
+                padding-right: 20px;
+                padding-left: 60px;
+                padding-top: 0;
+                .tituloPrincipal {
+                    padding-top: 30vh;
+                }
+            }
+            img {
+                height: 95vh;
+                width: 60%;
+            }
         }
-        img {
-            height: 95vh;
-            width: 60%;
+        #altura {
+            height: auto;
+            #galery {
+                display: grid;
+                grid-template-areas: "cuadro cuadro" "descripcion1 descripcion1" "imagen2 imagen3" "descripcion2 descripcion3";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50vh 40vh 40vh 20vh;
+                padding: 30px;
+                grid-column-gap: 10px;
+                grid-row-gap: 5px;
+                justify-content: center;
+                margin: 0px;
+                height: auto;
+                #picture2 {
+                    background-position: center;
+                }
+                #picture3 {
+                    background-position: center;
+                }
+            }
         }
-    }
-    .tituloPrincipal {
-        padding-top: 30vh;
-    }
-    #altura {
-        height: auto;
-    }
-    #galery {
-        display: grid;
-        grid-template-areas: "cuadro cuadro" "descripcion1 descripcion1" "imagen2 imagen3" "descripcion2 descripcion3";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50vh 40vh 40vh 20vh;
-        padding: 30px;
-        grid-column-gap: 10px;
-        grid-row-gap: 5px;
-        justify-content: center;
-        margin: 0px;
-        height: auto;
-    }
-    #galery #picture2 {
-        background-position: center;
-    }
-    #galery #picture3 {
-        background-position: center;
     }
     /*Eventos*/
     .tituloSecundario {
@@ -498,30 +524,34 @@
         }
     }
     /*Unete*/
-    #quintoBanner {
-        width: 50%;
-        height: 100vh;
-        background-image: url("../images/mercado-28-lima.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .formulario {
-        padding: 0;
-        background-color: white;
-        width: 50%;
-        color: black;
-        text-align: center;
-        align-content: center;
-        h1 {
-            padding-top: 100px;
+    .unete {
+        #quintoBanner {
+            width: 50%;
+            height: 95vh;
+            background-image: url("../images/mercado-28-lima.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
-        .formulario__input {
-            width: 70%;
-            margin: 10px 0;
-        }
-        .boton {
-            margin-bottom: 30px;
+        .formulario {
+            padding: 0;
+            background-color: white;
+            width: 50%;
+            color: black;
+            text-align: center;
+            align-content: center;
+            h1 {
+                padding-top: 100px;
+            }
+            form {
+                .formulario__input {
+                    width: 70%;
+                    margin: 10px 0;
+                }
+                .boton {
+                    margin-bottom: 30px;
+                }
+            }
         }
     }
 }
