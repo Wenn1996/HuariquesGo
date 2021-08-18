@@ -1,6 +1,6 @@
 /*mobile first*/
 
-@media only screen and (max-width: 480px) {
+@media (min-width:320px) and (max-width: 599px) {
     /*INDEX*/
     nav li {
         display: block;
@@ -14,44 +14,49 @@
         display: flex;
         flex-direction: column;
         height: auto;
-    }
-    .titulo {
-        background-color: white;
-        width: 100%;
-        height: 40vh;
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-        align-items: center;
+        .titulo {
+            background-color: white;
+            width: 100%;
+            height: 50vh;
+            padding-top: 0;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+            align-items: center;
+        }
+        img {
+            height: 50vh;
+            width: 100%;
+        }
     }
     .titulo p {
         padding: 0 50px;
         text-align: center;
     }
-    .bannerPrincipal img {
-        height: 50vh;
-        width: 100%;
-    }
     .tituloPrincipal {
         padding-top: 50px;
+        font-size: 2rem;
     }
     #altura {
         height: max-content;
         padding: 0;
-        height: 130vh;
+        height: 240vh;
     }
     #galery {
         display: grid;
-        grid-template-areas: "cuadro" "imagen2" "descripcion2" "imagen3" "descripcion3";
+        grid-template-areas: "cuadro" "descripcion1" "imagen2" "descripcion2" "imagen3" "descripcion3";
         grid-template-columns: 100%;
-        grid-template-rows: 60% 60% 40% 60% 40%;
+        grid-template-rows: 30% 40% 20% 20% 10% 10%;
         padding: 40px;
         grid-column-gap: 0px;
-        grid-row-gap: 20px;
+        grid-row-gap: 10px;
         justify-content: center;
-        margin-bottom: 0px;
-        height: auto;
+        margin: 0;
+        height: 150vh;
+    }
+    #galery #picture2,
+    #picture3 {
+        margin-top: 10px;
     }
     .subtituloPrincipal {
         padding-top: 50px;
@@ -59,82 +64,66 @@
     }
     /*Restaurantes*/
     #bannerSecundario {
-        height: 100vh;
+        height: 50vh;
     }
-    #huariques {
-        height: 100vh;
+    #titRestaurante {
+        height: 40vh;
+        h1 {
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 2rem;
+        }
     }
-    .cuadros {
-        padding: 20px 50px;
-        margin: 30px 0;
-    }
-    .cuadros__img {
-        margin: 5px;
-        width: 45%;
-        height: 180px;
-    }
-    .tarjeta {
-        margin: 0;
-        height: 100vh;
-        padding: 0 50px;
-        align-items: center;
-        text-align: center;
-    }
-    .tarjeta div h3 {
-        padding-top: 50px;
-        text-align: center;
-    }
-    .tarjeta__div {
-        margin-top: 40px;
-        padding: 20px;
-        height: auto;
-        width: 80%;
-    }
-    #recomendados {
-        height: max-content;
-        padding: 0 50px;
+    #fotos {
+        height: 350vh;
     }
     #galery2 {
         display: grid;
-        grid-template-areas: "cuadro cuadro imagen2 imagen3" "imagen4 imagen5 imagen6 imagen6" "imagen7 imagen7 imagen8 imagen9";
-        grid-template-columns: 22% 22% 22% 22%;
-        grid-template-rows: 36% 36% 36% 36%;
-        height: 100vh;
+        grid-template-areas: "cuadro" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6" "imagen7" "imagen8" "imagen9";
+        grid-template-columns: 90%;
+        grid-template-rows: 36% 36% 36% 36% 36% 36% 36% 36% 36%;
+        height: 100hv;
         padding: 0;
-        grid-column-gap: 10px;
+        grid-column-gap: 0;
         grid-row-gap: 10px;
         justify-content: center;
-        margin: 20px 0;
+        margin: 20px 10px;
     }
     /*Eventos*/
-    .tituloSecundario {
-        padding-top: 50px;
-    }
     .columna {
         padding: 10px 50px;
-    }
-    .columna {
-        img {
-            width: 90%;
-            height: 50%;
-            padding: 12px 17px;
-            margin: 0;
-            text-align: center;
+        .columna__evento {
+            padding: 15px 0;
+            align-items: center;
+            flex-direction: column;
+            img {
+                width: 85%;
+                height: 50%;
+                margin: 0;
+                text-align: center;
+            }
+            .columna__container {
+                padding: 5px 17px;
+                align-items: center;
+                text-align: center;
+                .columna__titulo {
+                    margin: 0;
+                    font-size: 1rem;
+                    text-align: left;
+                }
+                .columna__fecha {
+                    font-size: 0.8rem;
+                    text-align: left;
+                }
+                .columna__desc {
+                    text-align: left;
+                    font-size: 0.9rem;
+                }
+                .columna__boton {
+                    margin: 10px 0;
+                }
+            }
         }
-    }
-    .columna__evento {
-        margin-top: 20px;
-        align-items: center;
-    }
-    .columna__container {
-        padding: 5px 17px;
-        align-items: center;
-    }
-    .columna__container h4 {
-        margin-top: 0;
-    }
-    .columna__titulo {
-        margin: 50px 0 0 0;
     }
     /*unete*/
     .unete {
@@ -143,6 +132,7 @@
         flex-wrap: wrap;
         margin: 0;
         height: auto;
+        align-content: center;
     }
     #quintoBanner {
         width: 100%;
@@ -160,8 +150,6 @@
         color: black;
         text-align: center;
         align-content: center;
-    }
-    .formulario {
         h1 {
             padding-top: 0;
         }
@@ -169,38 +157,35 @@
             padding: 0 50px;
         }
     }
-    .formulario__boton {
-        margin-left: 279px;
-    }
     /*nosotros*/
     #cuartoBanner {
         height: auto;
         display: flex;
         flex-direction: column;
         padding: 0;
-        overflow: hidden;
+        .card {
+            height: 40vh;
+            width: 100%;
+            background-color: white;
+            transition: none;
+            text-align: center;
+            padding: 0;
+            h1 {
+                padding-top: 30px;
+                font-size: 2rem;
+            }
+            p {
+                font-size: 0.8rem;
+                margin: 10px 0;
+                height: 15vh;
+                width: 100%;
+                text-align: center;
+            }
+        }
         img {
-            height: 50vh;
+            height: 45vh;
             width: 100%;
         }
-    }
-    .card {
-        height: 30vh;
-        width: 80vh;
-        background-color: white;
-        transition: all 2s;
-        text-align: justify;
-        padding: 50px;
-    }
-    .card:hover {
-        padding: 0px;
-        background-color: white;
-        width: 100%;
-        height: 30vh;
-        transition: all 2s;
-    }
-    .card h1 {
-        padding-top: 0px;
     }
     .cardNosotros {
         display: flex;
@@ -219,14 +204,22 @@
     .cardNosotros__titulo {
         margin-bottom: 5px;
     }
-    /**/
-    .subLista {
-        display: none;
-        position: relative;
+    .cardNosotros__boton {
+        margin-bottom: 20px;
     }
+    .cardNostros__parrafo {
+        font-size: 0.8rem;
+    }
+    .subtituloSecundario {
+        margin-top: 25px;
+        padding-top: 20px;
+        animation: swing;
+        animation-duration: 4s;
+    }
+    /**/
 }
 
-@media (min-width:481px) and (max-width: 768px) {
+@media (min-width:600px) and (max-width: 768px) {
     /*INDEX*/
     nav li {
         display: block;
@@ -240,32 +233,35 @@
         display: flex;
         flex-direction: column;
         height: auto;
-    }
-    .titulo {
-        background-color: white;
-        width: 100%;
-        height: 100vh;
-        padding-right: 20px;
-        padding-left: 60px;
-        padding-top: 0;
-    }
-    .bannerPrincipal img {
-        height: 100vh;
-        width: 100%;
+        .titulo {
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            padding-right: 20px;
+            padding-left: 60px;
+            padding-top: 0;
+        }
+        img {
+            height: 90vh;
+            width: 100%;
+        }
     }
     .tituloPrincipal {
-        padding-top: 180px;
+        padding-top: 40vh;
+    }
+    #altura {
+        height: auto;
     }
     #galery {
         display: grid;
-        grid-template-areas: "cuadro cuadro" "imagen2 imagen3" "descripcion2 descripcion3";
+        grid-template-areas: "cuadro cuadro" "descripcion1 descripcion1" "imagen2 imagen3" "descripcion2 descripcion3";
         grid-template-columns: 50% 50%;
-        grid-template-rows: 70vh 50vh 20vh;
-        padding: 40px;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        grid-template-rows: 50vh 40vh 40vh 20vh;
+        padding: 30px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
         justify-content: center;
-        margin-bottom: 0px;
+        margin: 0px;
         height: auto;
     }
     #galery #picture2 {
@@ -280,75 +276,102 @@
     }
     /*Restaurantes*/
     #bannerSecundario {
-        height: 100vh;
+        height: 50vh;
     }
-    #huariques {
-        height: 100vh;
+    #titRestaurante {
+        h1 {
+            padding: 30px;
+            margin: 20px 0;
+            font-size: 2rem;
+        }
     }
-    .cuadros {
-        padding: 20px 50px;
-    }
-    .cuadros__img {
-        margin: 5px;
-        width: 45%;
-        height: 180px;
-    }
-    .tarjeta {
-        margin: 0;
-        height: 100vh;
-        padding: 0 50px;
-        align-items: center;
-        text-align: center;
-    }
-    .tarjeta div h3 {
-        padding-top: 50px;
-        text-align: center;
-    }
-    .tarjeta__div {
-        margin-top: 40px;
-        padding: 20px;
-        height: auto;
-        width: 80%;
-    }
-    #recomendados {
-        height: max-content;
-        padding: 0 50px;
-    }
-    #galery2 {
-        display: grid;
-        grid-template-areas: "cuadro cuadro imagen2 imagen3" "imagen4 imagen5 imagen6 imagen6" "imagen7 imagen7 imagen8 imagen9";
-        grid-template-columns: 22% 22% 22% 22%;
-        grid-template-rows: 36% 36% 36% 36%;
-        height: 100vh;
-        padding: 0;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        justify-content: center;
+    #fotos {
         margin: 20px 0;
+        #galery2 {
+            display: grid;
+            grid-template-areas: "cuadro cuadro imagen2 imagen3" "imagen4 imagen5 imagen6 imagen6" "imagen7 imagen7 imagen8 imagen9" "cuadro2 cuadro2 cuadro2 cuadro2";
+            grid-template-columns: 22% 22% 22% 22%;
+            grid-template-rows: 22% 22% 22% 22%;
+            height: 120vh;
+            padding: 0;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            justify-content: center;
+            margin: 10px 0;
+        }
     }
     /*Eventos*/
     .tituloSecundario {
-        padding-top: 180px;
+        padding-top: 40vh;
+        font-size: 2rem;
     }
     .columna {
         padding: 10px 50px;
-    }
-    .columna {
-        img {
-            width: 35%;
-            height: 40%;
-            padding: 12px;
-            margin: 0;
+        .columna__evento {
+            margin-top: 20px;
+            img {
+                width: 35%;
+                height: 30%;
+                padding: 0;
+                margin: 0;
+            }
+            .columna__container {
+                padding: 0 5px;
+                width: 60%;
+            }
+            .columna__titulo {
+                margin: 30px 0 0 0;
+            }
         }
     }
-    .columna__evento {
-        margin-top: 20px;
+    /*nosotros*/
+    #cuartoBanner {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        .card {
+            height: 40vh;
+            width: 100%;
+            background-color: white;
+            transition: none;
+            text-align: center;
+            padding: 0;
+            h1 {
+                padding-top: 70px;
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+                margin: 10px 0;
+                height: 15vh;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        img {
+            height: 55vh;
+            width: 100%;
+        }
     }
-    .columna__container {
-        padding: 12px;
-    }
-    .columna__titulo {
-        margin: 50px 0 0 0;
+    .cardNosotros {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0 50px;
+        .cardNosotros__img {
+            padding: 0;
+            margin: 20px 0;
+            width: 100%;
+        }
+        .cardNosotros__texto {
+            padding: 0;
+            .cardNosotros__titulo {
+                margin-bottom: 5px;
+            }
+            .cardNosotros__boton {
+                margin-bottom: 30px;
+            }
+        }
     }
     /*unete*/
     .unete {
@@ -360,89 +383,144 @@
     }
     #quintoBanner {
         width: 100%;
-        height: 50vh;
+        height: 40vh;
         background-image: url("../images/mercado-28-lima.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
     .formulario {
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding: 0;
         background-color: white;
         width: 100%;
         color: black;
         text-align: center;
         align-content: center;
-    }
-    .formulario {
         h1 {
-            padding-top: 0;
+            padding-top: 10px;
+        }
+        .formulario__input {
+            width: 70%;
+            margin: 10px 0;
+        }
+        .boton {
+            margin-bottom: 30px;
         }
     }
-    .formulario__boton {
-        margin-left: 279px;
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    /*index*/
+    .bannerPrincipal {
+        display: flex;
+        flex-direction: row;
+        .titulo {
+            background-color: white;
+            width: 40%;
+            height: 95vh;
+            padding-right: 20px;
+            padding-left: 60px;
+            padding-top: 0;
+        }
+        img {
+            height: 95vh;
+            width: 60%;
+        }
     }
-    /*nosotros*/
-    .card {
-        height: 100vh;
-        width: 80vh;
-        background-color: white;
-        transition: all 2s;
-        text-align: justify;
-        padding: 60px 0px 20px 30px;
+    .tituloPrincipal {
+        padding-top: 30vh;
     }
-    .card:hover {
-        padding: 50px;
-        background-color: white;
-        width: 40%;
-        height: 100vh;
-        transition: all 2s;
+    #altura {
+        height: auto;
     }
-    .card h1 {
-        padding-top: 20px;
+    #galery {
+        display: grid;
+        grid-template-areas: "cuadro cuadro" "descripcion1 descripcion1" "imagen2 imagen3" "descripcion2 descripcion3";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50vh 40vh 40vh 20vh;
+        padding: 30px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+        justify-content: center;
+        margin: 0px;
+        height: auto;
     }
+    #galery #picture2 {
+        background-position: center;
+    }
+    #galery #picture3 {
+        background-position: center;
+    }
+    /*Eventos*/
+    .tituloSecundario {
+        padding-top: 40vh;
+        font-size: 2rem;
+    }
+    .columna {
+        padding: 10px 50px;
+        .columna__evento {
+            margin-top: 20px;
+            img {
+                width: 35%;
+                height: 30%;
+                padding: 0;
+                margin: 0;
+            }
+            .columna__container {
+                padding: 0 5px;
+                width: 60%;
+            }
+            .columna__titulo {
+                margin: 30px 0 0 0;
+            }
+        }
+    }
+    /*Nosotros*/
     .cardNosotros {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         padding: 0 50px;
+        .cardNosotros__img {
+            padding: 0;
+            margin: 20px 0;
+            width: 50%;
+        }
+        .cardNosotros__texto {
+            padding: 0;
+            .cardNosotros__titulo {
+                margin-bottom: 5px;
+            }
+            .cardNosotros__boton {
+                margin-bottom: 30px;
+            }
+        }
     }
-    .cardNosotros__img {
-        padding: 0;
-        margin: 20px 0;
-        width: 100%;
-    }
-    .cardNosotros__texto {
-        padding: 0;
-    }
-    .cardNosotros__titulo {
-        margin-bottom: 5px;
-    }
-    /**/
-    .subLista {
-        display: none;
-        position: relative;
-    }
-}
-
-
-/*
-@media (min-width:769px) and (max-width: 1024px) {
-    #unete {
-        grid-template-rows: 9% 80% 9%;
-    }
-    .bannerPrincipal {
-        height: 95vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .titulo {
-        padding-top: 250px;
-        background-color: white;
-        width: 95vh;
+    /*Unete*/
+    #quintoBanner {
+        width: 50%;
         height: 100vh;
+        background-image: url("../images/mercado-28-lima.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .formulario {
+        padding: 0;
+        background-color: white;
+        width: 50%;
+        color: black;
+        text-align: center;
+        align-content: center;
+        h1 {
+            padding-top: 100px;
+        }
+        .formulario__input {
+            width: 70%;
+            margin: 10px 0;
+        }
+        .boton {
+            margin-bottom: 30px;
+        }
     }
 }
-*/
