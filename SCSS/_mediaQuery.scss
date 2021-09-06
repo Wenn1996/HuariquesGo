@@ -280,19 +280,13 @@
                 width: 50%;
                 margin: 10px 0;
                 .gradiente__lista {
+                    padding: 0;
                     .gradiente__link {
                         color: white;
-                        #facebook {
-                            height: 15px;
-                            width: 15px;
-                        }
-                        #insta {
-                            height: 15px;
-                            width: 15px;
-                        }
-                        #pinterest {
-                            height: 15px;
-                            width: 15px;
+                        img {
+                            margin: 0;
+                            height: 20px;
+                            width: 20px;
                         }
                     }
                     .gradiente__texto {
@@ -510,27 +504,57 @@
         }
     }
     /*error*/
-    #error {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        .titulo {
-            width: 100%;
-            h1 {
-                font-size: 25px;
+    #errorBody {
+        #error {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            .titulo {
+                width: 100%;
+                h1 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                a {
+                    width: 150px;
+                    text-decoration: none;
+                }
             }
-            p {
-                font-size: 18px;
-                font-weight: bold;
-            }
-            a {
-                width: 150px;
-                text-decoration: none;
+            img {
+                height: 100vh;
+                width: 100%;
             }
         }
-        img {
-            height: 100vh;
+        .gradiente {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
             width: 100%;
+            background-image: linear-gradient(to right, rgb(207, 160, 28), yellow);
+            div {
+                width: 50%;
+                margin: 10px 0;
+                .gradiente__lista {
+                    padding: 0;
+                    .gradiente__link {
+                        color: white;
+                        img {
+                            margin: 0;
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                    .gradiente__texto {
+                        color: black;
+                    }
+                }
+                .gradiente__texto {
+                    margin: 3% 0;
+                }
+            }
         }
     }
 }
@@ -661,23 +685,53 @@
         }
     }
     /*Error*/
-    #error {
-        .titulo {
-            h1 {
-                font-size: 25px;
+    #errorBody {
+        #error {
+            .titulo {
+                h1 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                a {
+                    width: 120px;
+                    text-decoration: none;
+                }
             }
-            p {
-                font-size: 18px;
-                font-weight: bold;
-            }
-            a {
-                width: 120px;
-                text-decoration: none;
+            img {
+                height: 100vh;
+                width: 70%;
             }
         }
-        img {
-            height: 100vh;
-            width: 70%;
+        .gradiente {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            width: 100%;
+            background-image: linear-gradient(to right, rgb(207, 160, 28), yellow);
+            div {
+                width: 50%;
+                margin: 10px 0;
+                .gradiente__lista {
+                    padding: 0;
+                    .gradiente__link {
+                        color: white;
+                        img {
+                            margin: 0;
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                    .gradiente__texto {
+                        color: black;
+                    }
+                }
+                .gradiente__texto {
+                    margin: 3% 0;
+                }
+            }
         }
     }
 }

@@ -650,19 +650,16 @@ main {
     #errorBody .gradiente div {
       width: 50%;
       margin: 10px 0; }
-      #errorBody .gradiente div .gradiente__lista .gradiente__link {
-        color: white; }
-        #errorBody .gradiente div .gradiente__lista .gradiente__link #facebook {
-          height: 15px;
-          width: 15px; }
-        #errorBody .gradiente div .gradiente__lista .gradiente__link #insta {
-          height: 15px;
-          width: 15px; }
-        #errorBody .gradiente div .gradiente__lista .gradiente__link #pinterest {
-          height: 15px;
-          width: 15px; }
-      #errorBody .gradiente div .gradiente__lista .gradiente__texto {
-        color: black; }
+      #errorBody .gradiente div .gradiente__lista {
+        padding: 0; }
+        #errorBody .gradiente div .gradiente__lista .gradiente__link {
+          color: white; }
+          #errorBody .gradiente div .gradiente__lista .gradiente__link img {
+            margin: 0;
+            height: 20px;
+            width: 20px; }
+        #errorBody .gradiente div .gradiente__lista .gradiente__texto {
+          color: black; }
       #errorBody .gradiente div .gradiente__texto {
         margin: 3% 0; } }
 
@@ -819,23 +816,44 @@ main {
       .unete .formulario .boton {
         margin-bottom: 30px; }
   /*error*/
-  #error {
+  #errorBody #error {
     display: flex;
     flex-direction: column;
     height: auto; }
-    #error .titulo {
+    #errorBody #error .titulo {
       width: 100%; }
-      #error .titulo h1 {
+      #errorBody #error .titulo h1 {
         font-size: 25px; }
-      #error .titulo p {
+      #errorBody #error .titulo p {
         font-size: 18px;
         font-weight: bold; }
-      #error .titulo a {
+      #errorBody #error .titulo a {
         width: 150px;
         text-decoration: none; }
-    #error img {
+    #errorBody #error img {
       height: 100vh;
-      width: 100%; } }
+      width: 100%; }
+  #errorBody .gradiente {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(to right, #cfa01c, yellow); }
+    #errorBody .gradiente div {
+      width: 50%;
+      margin: 10px 0; }
+      #errorBody .gradiente div .gradiente__lista {
+        padding: 0; }
+        #errorBody .gradiente div .gradiente__lista .gradiente__link {
+          color: white; }
+          #errorBody .gradiente div .gradiente__lista .gradiente__link img {
+            margin: 0;
+            height: 20px;
+            width: 20px; }
+        #errorBody .gradiente div .gradiente__lista .gradiente__texto {
+          color: black; }
+      #errorBody .gradiente div .gradiente__texto {
+        margin: 3% 0; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   /*index*/
@@ -930,17 +948,38 @@ main {
     .unete .formulario form .boton {
       margin-bottom: 30px; }
   /*Error*/
-  #error .titulo h1 {
+  #errorBody #error .titulo h1 {
     font-size: 25px; }
-  #error .titulo p {
+  #errorBody #error .titulo p {
     font-size: 18px;
     font-weight: bold; }
-  #error .titulo a {
+  #errorBody #error .titulo a {
     width: 120px;
     text-decoration: none; }
-  #error img {
+  #errorBody #error img {
     height: 100vh;
-    width: 70%; } }
+    width: 70%; }
+  #errorBody .gradiente {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(to right, #cfa01c, yellow); }
+    #errorBody .gradiente div {
+      width: 50%;
+      margin: 10px 0; }
+      #errorBody .gradiente div .gradiente__lista {
+        padding: 0; }
+        #errorBody .gradiente div .gradiente__lista .gradiente__link {
+          color: white; }
+          #errorBody .gradiente div .gradiente__lista .gradiente__link img {
+            margin: 0;
+            height: 20px;
+            width: 20px; }
+        #errorBody .gradiente div .gradiente__lista .gradiente__texto {
+          color: black; }
+      #errorBody .gradiente div .gradiente__texto {
+        margin: 3% 0; } }
 
 * {
   margin: 0;
