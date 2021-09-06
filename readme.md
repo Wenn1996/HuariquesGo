@@ -1,0 +1,2 @@
+Huariques Go es una web enfocada en promocionar restaurantes y huariques del Perú.
+Ayuda a emprendedores que quieran a dar a conocer sus restaurantes y es una guia para los usuarios que quieran probar y degustar platillos peruanos.
