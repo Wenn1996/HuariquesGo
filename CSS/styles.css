@@ -263,6 +263,7 @@ main #titRestaurante {
 
 /*Pagina de error*/
 #error {
+  margin: 0px;
   color: black;
   font-family: 'Noto Sans JP', sans-serif; }
   #error .titulo h1 {
@@ -624,22 +625,46 @@ main {
       main section .cardNosotros .cardNosotros__texto .cardNosotros__boton {
         margin-bottom: 20px; }
   /*error*/
-  .bannerPrincipal {
+  #errorBody .bannerPrincipal {
     display: flex;
     flex-direction: column;
-    height: auto; }
-    .bannerPrincipal .titulo {
+    height: auto;
+    margin: 0; }
+    #errorBody .bannerPrincipal .titulo {
       width: 90%;
       padding: 20px;
       height: 50vh; }
-      .bannerPrincipal .titulo p {
-        font-size: 20px; }
-      .bannerPrincipal .titulo a {
+      #errorBody .bannerPrincipal .titulo p {
+        font-size: 15px; }
+      #errorBody .bannerPrincipal .titulo a {
         text-decoration: none; }
-    .bannerPrincipal img {
-      margin: 20px 0;
+    #errorBody .bannerPrincipal img {
       width: auto;
-      height: 50vh; } }
+      height: 40vh; }
+  #errorBody .gradiente {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(to right, #cfa01c, yellow); }
+    #errorBody .gradiente div {
+      width: 50%;
+      margin: 10px 0; }
+      #errorBody .gradiente div .gradiente__lista .gradiente__link {
+        color: white; }
+        #errorBody .gradiente div .gradiente__lista .gradiente__link #facebook {
+          height: 15px;
+          width: 15px; }
+        #errorBody .gradiente div .gradiente__lista .gradiente__link #insta {
+          height: 15px;
+          width: 15px; }
+        #errorBody .gradiente div .gradiente__lista .gradiente__link #pinterest {
+          height: 15px;
+          width: 15px; }
+      #errorBody .gradiente div .gradiente__lista .gradiente__texto {
+        color: black; }
+      #errorBody .gradiente div .gradiente__texto {
+        margin: 3% 0; } }
 
 @media (min-width: 600px) and (max-width: 768px) {
   nav li {
