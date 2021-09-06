@@ -262,18 +262,34 @@ main #titRestaurante {
     opacity: 1; } }
 
 /*Pagina de error*/
-#error {
+#errorBody #error {
   margin: 0px;
   color: black;
   font-family: 'Noto Sans JP', sans-serif; }
-  #error .titulo h1 {
+  #errorBody #error .titulo h1 {
     font-size: 30px; }
-  #error .titulo p {
+  #errorBody #error .titulo p {
     font-size: 25px;
     font-weight: bold; }
-  #error .titulo a {
+  #errorBody #error .titulo a {
     width: 200px;
     text-decoration: none; }
+
+#errorBody .gradiente div {
+  width: 50%;
+  margin: 10px 0; }
+  #errorBody .gradiente div p {
+    margin: 0; }
+  #errorBody .gradiente div .gradiente__lista {
+    padding: 0; }
+    #errorBody .gradiente div .gradiente__lista .gradiente__link {
+      color: white; }
+      #errorBody .gradiente div .gradiente__lista .gradiente__link img {
+        margin: 0;
+        height: 20px;
+        width: 20px; }
+    #errorBody .gradiente div .gradiente__lista .gradiente__texto {
+      color: black; }
 
 /*gradientes*/
 .gradiente {
@@ -633,7 +649,7 @@ main {
     #errorBody .bannerPrincipal .titulo {
       width: 90%;
       padding: 20px;
-      height: 50vh; }
+      height: 60vh; }
       #errorBody .bannerPrincipal .titulo p {
         font-size: 15px; }
       #errorBody .bannerPrincipal .titulo a {
@@ -959,27 +975,19 @@ main {
   #errorBody #error img {
     height: 100vh;
     width: 70%; }
-  #errorBody .gradiente {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    width: 100%;
-    background-image: linear-gradient(to right, #cfa01c, yellow); }
-    #errorBody .gradiente div {
-      width: 50%;
-      margin: 10px 0; }
-      #errorBody .gradiente div .gradiente__lista {
-        padding: 0; }
-        #errorBody .gradiente div .gradiente__lista .gradiente__link {
-          color: white; }
-          #errorBody .gradiente div .gradiente__lista .gradiente__link img {
-            margin: 0;
-            height: 20px;
-            width: 20px; }
-        #errorBody .gradiente div .gradiente__lista .gradiente__texto {
-          color: black; }
-      #errorBody .gradiente div .gradiente__texto {
-        margin: 3% 0; } }
+  #errorBody .gradiente div {
+    width: 50%;
+    margin: 10px 0; }
+    #errorBody .gradiente div .gradiente__lista {
+      padding: 0; }
+      #errorBody .gradiente div .gradiente__lista .gradiente__link {
+        color: white; }
+        #errorBody .gradiente div .gradiente__lista .gradiente__link img {
+          margin: 0;
+          height: 20px;
+          width: 20px; }
+      #errorBody .gradiente div .gradiente__lista .gradiente__texto {
+        color: black; } }
 
 * {
   margin: 0;

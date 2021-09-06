@@ -257,7 +257,7 @@
             .titulo {
                 width: 90%;
                 padding: 20px;
-                height: 50vh;
+                height: 60vh;
                 p {
                     font-size: 15px;
                 }
@@ -706,11 +706,6 @@
             }
         }
         .gradiente {
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-            width: 100%;
-            background-image: linear-gradient(to right, rgb(207, 160, 28), yellow);
             div {
                 width: 50%;
                 margin: 10px 0;
@@ -727,9 +722,6 @@
                     .gradiente__texto {
                         color: black;
                     }
-                }
-                .gradiente__texto {
-                    margin: 3% 0;
                 }
             }
         }

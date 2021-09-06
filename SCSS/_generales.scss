@@ -306,22 +306,47 @@ main {
 
 /*Pagina de error*/
 
-#error {
-    margin: 0px;
-    color: black;
-    font-family: 'Noto Sans JP', sans-serif;
-    .titulo {
-        h1 {
-            font-size: 30px;
+#errorBody {
+    #error {
+        margin: 0px;
+        color: black;
+        font-family: 'Noto Sans JP', sans-serif;
+        .titulo {
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 25px;
+                font-weight: bold;
+            }
+            a {
+                width: 200px;
+                text-decoration: none;
+            }
+            $spinner-animation-speed: .15s;
         }
-        p {
-            font-size: 25px;
-            font-weight: bold;
+    }
+    .gradiente {
+        div {
+            width: 50%;
+            margin: 10px 0;
+            p {
+                margin: 0;
+            }
+            .gradiente__lista {
+                padding: 0;
+                .gradiente__link {
+                    color: white;
+                    img {
+                        margin: 0;
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+                .gradiente__texto {
+                    color: black;
+                }
+            }
         }
-        a {
-            width: 200px;
-            text-decoration: none;
-        }
-        $spinner-animation-speed: .15s;
     }
 }
