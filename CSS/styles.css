@@ -276,12 +276,29 @@ main #titRestaurante {
 
 /*gradientes*/
 .gradiente {
+  display: flex;
+  flex-direction: row;
   text-align: center;
+  width: 100%;
   background-image: linear-gradient(to right, #cfa01c, yellow); }
-  .gradiente .gradiente__link {
-    color: white; }
-  .gradiente .gradiente__texto {
-    color: black; }
+  .gradiente div {
+    width: 50%;
+    margin: 10px 0; }
+    .gradiente div .gradiente__lista .gradiente__link {
+      color: white; }
+      .gradiente div .gradiente__lista .gradiente__link #facebook {
+        height: 30px;
+        width: 30px; }
+      .gradiente div .gradiente__lista .gradiente__link #insta {
+        height: 30px;
+        width: 30px; }
+      .gradiente div .gradiente__lista .gradiente__link #pinterest {
+        height: 30px;
+        width: 30px; }
+    .gradiente div .gradiente__lista .gradiente__texto {
+      color: black; }
+    .gradiente div .gradiente__texto {
+      margin: 3% 0; }
 
 main {
   font-family: 'Noto Sans JP', sans-serif; }

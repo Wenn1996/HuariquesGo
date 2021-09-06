@@ -1,12 +1,36 @@
 /*gradientes*/
 
 .gradiente {
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    width: 100%;
     background-image: linear-gradient(to right, rgb(207, 160, 28), yellow);
-    .gradiente__link {
-        color: white;
-    }
-    .gradiente__texto {
-        color: black;
+    div {
+        width: 50%;
+        margin: 10px 0;
+        .gradiente__lista {
+            .gradiente__link {
+                color: white;
+                #facebook {
+                    height: 30px;
+                    width: 30px;
+                }
+                #insta {
+                    height: 30px;
+                    width: 30px;
+                }
+                #pinterest {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+            .gradiente__texto {
+                color: black;
+            }
+        }
+        .gradiente__texto {
+            margin: 3% 0;
+        }
     }
 }
