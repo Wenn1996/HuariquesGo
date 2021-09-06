@@ -507,6 +507,8 @@ main {
       justify-content: center;
       margin: 20px 10px; }
   /*Eventos*/
+  .titulo .tituloSecundario {
+    margin-top: 15%; }
   .columna {
     padding: 10px 30px;
     align-items: center; }
